@@ -1,10 +1,11 @@
 import React from 'react';
 import './css/index.css';
 const FunItem = (value) => {
+    
     return (
         <li className='fun-item'>
             <div className='item-imgbox'>
-                <img src={value.img}/>
+                <img src={value.img} />
             </div>
             <div className='item-infobox'>
                 <span className='info-title'>{value.title}</span>
