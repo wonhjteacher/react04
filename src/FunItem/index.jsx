@@ -1,15 +1,15 @@
 import React from 'react';
 import './css/index.css';
-const FunItem = (value) => {
+const FunItem = ({title,info,img}) => {
     
     return (
         <li className='fun-item'>
             <div className='item-imgbox'>
-                <img src={value.img} />
+                <img src={img}  alt="" />
             </div>
             <div className='item-infobox'>
-                <span className='info-title'>{value.title}</span>
-                <span className='info-company'>{value.info}</span>
+                <span className='info-title'>{title}</span>
+                <span className='info-company'>{info}</span>
             </div>
         </li>
     );
